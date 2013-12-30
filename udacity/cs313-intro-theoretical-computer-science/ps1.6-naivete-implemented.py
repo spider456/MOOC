@@ -29,15 +29,13 @@ def vertex_cover_naive(input_graph):
         # - Calculate the size of assignment
         # - Update the minimum_vertex_cover variable if appropriate
         if validity_check (assignment, input_graph) == True:
+            print assignment
             size_of_assignment = 0
             for i in range (n):
                 if assignment [i] == 1:
                     size_of_assignment += 1
             if size_of_assignment < minimum_vertex_cover:
                 minimum_vertex_cover = size_of_assignment
-    return minimum_vertex_cover
-
-
     # End of your code
     return minimum_vertex_cover
 
